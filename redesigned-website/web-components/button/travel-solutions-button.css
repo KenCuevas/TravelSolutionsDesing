@@ -1,0 +1,22 @@
+:host {
+  text-transform: uppercase;
+  border-radius: 0.25em;
+  padding: 0.6em 1.5em;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 700;
+  width: max-content;
+  cursor: pointer;
+  text-align: center;
+}
+
+:host(.primary) {
+  color: var(--onPrimary);
+  border: 0.1em solid var(--primaryColor);
+  background-color: var(--primaryColor);
+}
+
+:host(.secondary) {
+  color: var(--primaryColor);
+  border: 0.1em solid var(--primaryColor);
+}

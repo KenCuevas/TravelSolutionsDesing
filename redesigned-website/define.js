@@ -1,0 +1,1 @@
+ window.customElements.define("travel-solutions-button",TravelSolutionsButton);window.customElements.define("travel-solutions-actions",TravelSolutionsActions);

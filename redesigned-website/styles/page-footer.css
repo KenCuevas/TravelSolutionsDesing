@@ -1,0 +1,45 @@
+.page-footer {
+  padding: 0 3rem;
+}
+
+.page-footer__info {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialMedia__icon {
+  width: 4rem;
+}
+
+.subscribe-content {
+  display: flex;
+}
+
+.subscribe-content__textfield {
+  border-radius: 0.25em;
+  padding: 0.6em 1.5em;
+  background-color: var(--primaryBackground);
+  border: 0.2em solid var(--primaryBackground);
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+.subscribe-content__textfield:focus {
+  border: 0.2em solid var(--primaryColor);
+  outline: none;
+}
+
+.copyright {
+  color: var(--onPrimary);
+  background-color: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+}

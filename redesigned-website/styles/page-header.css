@@ -1,0 +1,111 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-header__logo {
+  width: 8rem;
+  padding: 1rem;
+}
+
+.page-header__menu-btn {
+  background-color: transparent;
+  border: none;
+  z-index: 3;
+  padding: 1rem;
+}
+
+.page-header__menu-btn__icon-svg {
+  width: 2rem;
+}
+
+/* Navbar mobile */
+.page-header__nav {
+  background-color: var(--onPrimary);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: -80vw;
+  width: 75%;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+/* Navbar mobile animation */
+@keyframes page-header__nav--is-visible-animation {
+  0% {
+    right: -80vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes page-header__nav--is-not-visible-animation {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -80vw;
+  }
+}
+
+.page-header__nav--is-visible {
+  animation-name: page-header__nav--is-visible-animation;
+  animation-duration: 250ms;
+  right: 0;
+}
+
+.page-header__nav--is-not-visible {
+  animation-name: page-header__nav--is-not-visible-animation;
+  animation-duration: 250ms;
+  right: -80vw;
+}
+
+/* Navbar action buttons in mobile */
+.page-header__nav__btns {
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+}
+
+.page-header__nav__btns__btn--is-secondary {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.page-header__nav__btns__btn--is-primary {
+  width: 100%;
+}
+
+/* Navbar links in mobile */
+.page-header__nav__links {
+  padding: 0;
+}
+
+.page-header__nav__links__item {
+  padding: 1rem;
+  margin: 0;
+  list-style-type: none;
+}
+
+.page-header__nav__links__item__link {
+  color: var(--textColor);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5rem;
+  border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.page-header__nav__links__item__link:hover {
+  border-bottom-color: var(--onHover);
+}
+
+.page-header__nav__links__item__link:target {
+  border-bottom-color: var(--primaryColor);
+}

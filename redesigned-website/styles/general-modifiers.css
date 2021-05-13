@@ -1,0 +1,20 @@
+.text--primaryColor {
+  color: var(--primaryColor);
+}
+
+.wave {
+  background-image: url("../assets/Wave-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15vw;
+  white-space: nowrap;
+}
+
+.wave--reverse {
+  transform: scaleY(-1);
+}
+
+.link {
+  color: var(--primaryColor);
+  text-decoration-line: none;
+}

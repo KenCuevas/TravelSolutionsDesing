@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es-419">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Solutions</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles-minified.css" />
+    <link
+      rel="stylesheet"
+      href="web-components/button/travel-solutions-button.css"
+    />
+    <script
+      src="web-components/button/travel-solutions-button.js"
+      defer
+    ></script>
+    <script
+      src="web-components/actions/travel-solutions-actions.js"
+      defer
+    ></script>
+    <script src="define.js" defer></script>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a href="#logo">
+        <img
+          class="page-header__logo"
+          src="assets/logo.svg"
+          alt="Logo de la compañia"
+          width="160"
+          height="90"
+        />
+      </a>
+      <button class="page-header__menu-btn" type="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="page-header__menu-btn__icon-svg"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </button>
+      <nav class="page-header__nav">
+        <ul class="page-header__nav__links">
+          <li class="page-header__nav__links__item">
+            <a
+              class="page-header__nav__links__item__link"
+              id="Inicio"
+              href="#Inicio"
+            >
+              Inicio
+            </a>
+          </li>
+          <li class="page-header__nav__links__item">
+            <a
+              class="page-header__nav__links__item__link"
+              id="Nosotros"
+              href="#Nosotros"
+            >
+              Nosotros
+            </a>
+          </li>
+          <li class="page-header__nav__links__item">
+            <a
+              class="page-header__nav__links__item__link"
+              id="Servicios"
+              href="#Servicios"
+            >
+              Servicios
+            </a>
+          </li>
+          <li class="page-header__nav__links__item">
+            <a
+              class="page-header__nav__links__item__link"
+              id="Contactos"
+              href="#Contactos"
+            >
+              Contactos
+            </a>
+          </li>
+        </ul>
+        <div class="page-header__nav__btns">
+          <travel-solutions-button
+            type="secondary"
+            class="page-header__nav__btns__btn--is-secondary"
+          >
+            iniciar sesión
+          </travel-solutions-button>
+          <travel-solutions-button
+            class="page-header__nav__btns__btn--is-primary"
+          >
+            registrate
+          </travel-solutions-button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-section">
+        <div class="main-section__hero">
+          <h1>
+            Todo lo que
+            <span class="text--primaryColor text--bold">necesitas</span> en la
+            planeación de congresos
+          </h1>
+          <div class="main-section__btns">
+            <travel-solutions-button
+              type="secondary"
+              class="main-section__btns__btn--is-secondary"
+            >
+              iniciar sesión
+            </travel-solutions-button>
+            <travel-solutions-button> registrate </travel-solutions-button>
+          </div>
+        </div>
+        <div class="main-section__slideshow">
+          <h2>Próximos eventos</h2>
+          <div class="slideshow">
+            <div class="slideshow__slide slideshow__slide--is-fade">
+              <img
+                src="assets/Jornada-Este.svg"
+                class="slideshow__slide__img"
+                width="280"
+                height="363"
+              />
+              <p class="slideshow__slide__slide-caption">
+                Evento de la Jornada Este
+              </p>
+            </div>
+            <div class="slideshow__slide slideshow__slide--is-fade">
+              <img
+                src="assets/Jornada-Sur.svg"
+                class="slideshow__slide__img"
+                width="280"
+                height="363"
+              />
+              <p class="slideshow__slide__slide-caption">
+                Evento de la Jornada Sur
+              </p>
+            </div>
+            <div class="slideshow__slide slideshow__slide--is-fade">
+              <img
+                src="assets/Jornada-Distrito.svg"
+                class="slideshow__slide__img"
+                width="280"
+                height="363"
+              />
+              <p class="slideshow__slide__slide-caption">
+                Evento de la Jornada Distrito
+              </p>
+            </div>
+            <a class="slideshow__prev-slide">&#10094;</a>
+            <a class="slideshow__next-slide">&#10095;</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="wave"></div>
+
+      <section class="services">
+        <article class="services__service services__service--reverse">
+          <div class="services__service__bubble-container">
+            <img src="assets/bubble-1.svg" width="745" height="584" />
+            <div
+              class="services__service__bubble-container__bubbleContent services__service__bubble-container__bubbleContent--reverse"
+            >
+              <h3>Eventos</h3>
+              <p>
+                Somos especialistas en la planeacion y organización de congresos
+                nacionales, así como internacionales; brindándoles así a
+                nuestros clientes la mayor comodidad posible.
+              </p>
+              <travel-solutions-button type="secondary">
+                más información
+              </travel-solutions-button>
+            </div>
+          </div>
+          <div
+            class="services__service__imgContainer services__service__imgContainer--reverse"
+          >
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="assets/images/EventService/image-original-desktop.jpg"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="assets/images/EventService/image-original-laptop.jpg"
+              />
+              <source
+                media="(min-width: 720px)"
+                srcset="
+                  assets/images/EventService/image-original-laptop-small.jpg
+                "
+              />
+              <source
+                media="(min-width: 540px)"
+                srcset="
+                  assets/images/EventService/image-original-tablet-small.jpg
+                "
+              />
+              <source
+                media="(min-width: 425px)"
+                srcset="
+                  assets/images/EventService/image-original-mobile-large.jpg
+                "
+              />
+              <source
+                media="(max-width: 375px)"
+                srcset="
+                  assets/images/EventService/image-original-mobile-medium.jpg
+                "
+              />
+              <source
+                media="(max-width: 320px)"
+                srcset="
+                  assets/images/EventService/image-original-mobile-small.jpg
+                "
+              />
+              <img
+                class="services__service__imgContainer__img"
+                src="assets/images/EventService/image-original-default.jpg"
+                width="495"
+                height="412"
+                alt="Un hombre dando un discurso en un evento."
+              />
+            </picture>
+          </div>
+        </article>
+        <article class="services__service services-service--reverse">
+          <div class="services__service__bubble-container">
+            <img
+              src="assets/bubble-2.svg"
+              width="745"
+              height="603"
+              loading="lazy"
+            />
+            <div class="services__service__bubble-container__bubbleContent">
+              <h3>Viajes</h3>
+              <p>
+                Viaja a donde quieras. Con nuestros planes y excelentes precios
+                pudes viajar a cualquier parte del mundo.
+              </p>
+              <travel-solutions-button type="secondary">
+                más información
+              </travel-solutions-button>
+            </div>
+          </div>
+          <div>
+            <div class="services__service__imgContainer">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    assets/images/TripService/image-original-desktop.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="assets/images/TripService/image-original-laptop.jpg"
+                />
+                <source
+                  media="(min-width: 720px)"
+                  srcset="
+                    assets/images/TripService/image-original-laptop-small.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 540px)"
+                  srcset="
+                    assets/images/TripService/image-original-tablet-small.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 425px)"
+                  srcset="
+                    assets/images/TripService/image-original-mobile-large.jpg
+                  "
+                />
+                <source
+                  media="(max-width: 375px)"
+                  srcset="
+                    assets/images/TripService/image-original-mobile-medium.jpg
+                  "
+                />
+                <source
+                  media="(max-width: 320px)"
+                  srcset="
+                    assets/ages/TripService/image-original-mobile-small.jpg
+                  "
+                />
+                <img
+                  class="services__service__imgContainer__img"
+                  src="assets/images/TripService/image-original-default.jpg"
+                  width="495"
+                  height="412"
+                  alt="Dos barcos en la costa de una playa."
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+        </article>
+        <article class="services__service services__service--reverse">
+          <div class="services__service__bubble-container">
+            <img
+              src="assets/bubble-3.svg"
+              width="745"
+              height="554"
+              loading="lazy"
+            />
+            <div
+              class="services__service__bubble-container__bubbleContent services__service__bubble-container__bubbleContent--reverse"
+            >
+              <h3>Hoteles</h3>
+              <p>
+                Hacemos tus sueños realidad. Puedes vivir las vacaciones soñadas
+                junto a tu familia con nuestros increíbles precios y ofertas.
+              </p>
+              <travel-solutions-button type="secondary">
+                más información
+              </travel-solutions-button>
+            </div>
+          </div>
+          <div>
+            <div
+              class="services__service__imgContainer services__service__imgContainer--reverse"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    assets/images/HotelService/image-original-desktop.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    assets/images/HotelService/image-original-laptop.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 720px)"
+                  srcset="
+                    assets/images/HotelService/image-original-laptop-small.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 540px)"
+                  srcset="
+                    assets/images/HotelService/image-original-tablet-large.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 425px)"
+                  srcset="
+                    assets/images/HotelService/image-original-mobile-large.jpg
+                  "
+                />
+                <source
+                  media="(max-width: 375px)"
+                  srcset="
+                    assets/images/HotelService/image-original-mobile-medium.jpg
+                  "
+                />
+                <source
+                  media="(max-width: 320px)"
+                  srcset="
+                    assets/images/HotelService/image-original-mobile-small.jpg
+                  "
+                />
+                <img
+                  class="services__service__imgContainer__img"
+                  src="assets/images/HotelService/image-original-default.jpg"
+                  width="495"
+                  height="434"
+                  alt="Maleta con objetos de viaje."
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="wave wave--reverse"></div>
+
+    <footer class="page-footer">
+      <section class="page-footer__info">
+        <h4>Suscríbete</h4>
+        <div>
+          <p>
+            Suscríbete a nuestra página para recibir información, ofertas y
+            mantenerte informado sobre nuestras novedades.
+          </p>
+          <div class="subscribe-content">
+            <input
+              class="subscribe-content__textfield"
+              placeholder="Escribe tu correo aquí..."
+            />
+            <travel-solutions-button>Suscríbete</travel-solutions-button>
+          </div>
+        </div>
+      </section>
+      <section class="page-footer__info">
+        <h4>Contactos</h4>
+        <div>
+          <div>
+            <h5>Dirección</h5>
+            <p>
+              <a
+                href="https://www.google.com/maps?ll=18.479456,-69.931014&z=15&t=m&hl=en&gl=US&mapclient=embed&daddr=Av.+Lope+de+Vega+59+Santo+Domingo+Dominican+Republic@18.4794555,-69.9310138"
+                class="link"
+                >Plaza Lope de Vega suite C-10, 3er nivel,</a
+              >
+              Av. Lope de vega No. 59, Enc. Naco, Santo Domingo
+            </p>
+          </div>
+          <div>
+            <h5>Email</h5>
+            <a href="mailto:Travel@solutions.com.do" class="link"
+              >Travel@solutions.com.do</a
+            >
+          </div>
+          <div>
+            <h5>Teléfonos</h5>
+            <a href="tel:+18094120010" class="link">(809) 412 0010</a>
+            <br />
+            <a href="tel:+18093349999" class="link">(809) 334 9999</a>
+          </div>
+        </div>
+      </section>
+      <section class="page-footer__info">
+        <h4>Redes Sociales</h4>
+        <div class="socialMedia">
+          <img
+            class="socialMedia__icon"
+            src="assets/Whatsapp.svg"
+            alt="A Whatsapp icon link"
+            width="80"
+            height="80"
+            loading="lazy"
+          />
+          <img
+            class="socialMedia__icon"
+            src="assets/Facebook.svg"
+            alt="A Facebook icon link"
+            width="80"
+            height="80"
+            loading="lazy"
+          />
+          <img
+            class="socialMedia__icon"
+            src="assets/Twitter.svg"
+            alt="A Twitter icon link"
+            width="80"
+            height="80"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </footer>
+
+    <div class="copyright">
+      <p>Copyright © 2018 | Travel Solutions All Rights Reserved</p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

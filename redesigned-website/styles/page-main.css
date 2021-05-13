@@ -1,0 +1,14 @@
+.main-section {
+  display: flex;
+  flex-flow: column;
+  margin: 3rem;
+  align-items: center;
+}
+
+.main-section__btns {
+  display: flex;
+}
+
+.main-section__btns__btn--is-secondary {
+  margin-right: 1rem;
+}
